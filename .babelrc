@@ -1,0 +1,16 @@
+{
+  "presets": [
+    ["env", {
+      "targets": ["last 2 versions"],
+      "useBuiltIns": true,
+      "spec": true,
+      "modules": "commonjs",
+      "debug": true
+    }],
+    "react",
+    "react-boilerplate"
+  ],
+  "plugins": [
+    "react-hot-loader/babel"
+  ]
+}
