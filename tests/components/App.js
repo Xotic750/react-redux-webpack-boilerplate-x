@@ -11,7 +11,7 @@ describe('App Component', () => {
   });
 
   it('should exist', () => {
-    expect(wrapper).to.exist();
+    expect(wrapper).to.exist;
   });
 
   it('should have one heading', () => {

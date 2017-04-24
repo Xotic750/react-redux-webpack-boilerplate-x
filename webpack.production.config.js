@@ -1,4 +1,4 @@
-const { resolve } = require('path');
+const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -8,15 +8,16 @@ const config = {
   devtool: 'cheap-module-source-map',
 
   entry: [
+    'babel-polyfill',
     './main.js',
     './assets/scss/main.scss',
   ],
 
-  context: resolve(__dirname, 'app'),
+  context: path.resolve(__dirname, 'app'),
 
   output: {
     filename: 'bundle.js',
-    path: resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'dist'),
     publicPath: '',
   },
 

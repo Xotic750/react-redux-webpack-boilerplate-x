@@ -27,7 +27,8 @@
     "prefer-object-spread",
     "no-use-extend-native",
     "eslint-comments",
-    "css-modules"
+    "css-modules",
+    "class-property"
   ],
   "extends": [
     "eslint:recommended",
@@ -41,19 +42,28 @@
     "airbnb"
   ],
   "rules": {
-    "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
-    "space-before-function-paren": "off",
-    "react/prefer-stateless-function": "off",
+    "global-require": "warn",
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": [ "webpack.*.js" ]}],
     "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
-    "linebreak-style": "off",
-    "global-require": "off",
     "compat/compat": "error",
+    "lodash/prefer-constant": "off",
+    "lodash/prefer-get": "warn",
+    "lodash/prefer-includes": "off",
+    "lodash/prefer-is-nil": "warn",
+    "lodash/prefer-lodash-chain": "off",
     "lodash/prefer-lodash-method": "off",
+    "lodash/prefer-lodash-typecheck": "warn",
+    "lodash/prefer-matches": "off",
+    "lodash/prefer-noop": "off",
+    "lodash/prefer-over-quantifier": "off",
+    "lodash/prefer-some": "off",
+    "lodash/prefer-startswith": "off",
     "jsdoc/check-param-names": "warn",
     "jsdoc/check-tag-names": "warn",
     "jsdoc/check-types": "warn",
     "jsdoc/newline-after-description": "warn",
     "jsdoc/require-description-complete-sentence": "warn",
+    "jsdoc/require-example": "warn",
     "jsdoc/require-hyphen-before-param-description": "warn",
     "jsdoc/require-param": "warn",
     "jsdoc/require-param-description": "warn",
@@ -79,6 +89,17 @@
     "eslint-comments/no-unlimited-disable": "error",
     "eslint-comments/no-unused-disable": "error",
     "eslint-comments/no-unused-enable": "error",
-    "eslint-comments/no-use": "error"
-  }
+    "eslint-comments/no-use": "warn",
+    "css-modules/no-unused-class": "off",
+    "css-modules/no-undef-class": "warn",
+    "class-property/class-property-semicolon": ["error", "always"]
+  },
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "webpack.production.config.js"
+      }
+    }
+  },
+  "globals": {}
 }

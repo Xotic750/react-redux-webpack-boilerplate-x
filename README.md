@@ -1,8 +1,8 @@
 # ES6 React Redux boilerplate using Webpack
 
-[![Travis](https://img.shields.io/travis/Xotic750/react-redux-webpack-boilerplate-x/master.svg?style=flat-square)](https://github.com/Xotic750/react-redux-webpack-boilerplate-x) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![Travis](https://img.shields.io/travis/Xotic750/react-redux-webpack-boilerplate-x/master.svg?style=flat-square)](https://travis-ci.org/Xotic750/react-redux-webpack-boilerplate-x) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-Simple and optimized React boilerplate. It includes: 
+Includes: 
 
 - [x] React v15
 - [x] ECMAScript 6 and JSX support
@@ -14,7 +14,7 @@ Simple and optimized React boilerplate. It includes:
 - [x] Separate CSS stylesheets generation
 - [x] Automatic HTML generation
 - [x] Production Config
-- [x] Custom Babel Preset with Decorators, Class Properties, Rest/Spread operator support 
+- [x] Custom Babel Preset with Exponentiation Operator, Class Properties, Rest/Spread operator support 
 - [x] ES6 Linting
 - [x] Export Separate Vendor Files
 - [X] Redux
@@ -48,4 +48,4 @@ Run `npm run production`. The production-ready code will be located under `dist`
 
 ## Licence
 
-_react-webpack-boilerplate_ is available under MIT.
+_react-redux-webpack-boilerplate-x_ is available under MIT.
